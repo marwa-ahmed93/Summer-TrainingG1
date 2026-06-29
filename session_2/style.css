@@ -1,0 +1,300 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+
+ /* font-family: "Playfair Display", serif; */
+}
+
+/*
+1-spacing margin & padding
+2-float 
+3-media query &  box-sizing
+4-position  & z-index
+*/
+
+
+/* p{
+
+}
+h2{
+    
+} */
+
+/*Fonts  
+1-font-size   16px vector
+2-font-weight  400
+
+*/
+.p-font{
+/* color: blue; */
+font-size: 100%;
+font-weight: 400;
+font-style: normal;
+/* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+ font-family: "Roboto", sans-serif;
+
+}
+/*spacing
+1-margin   
+margin: 50px   50px    100px    200px
+        top   right     bottom   left
+
+2-padding      
+
+padding: 50px   50px    100px    200px
+        top   right     bottom   left
+*/
+.p-font2{
+      font-family: "Archivo Black", sans-serif;
+}
+.marg{
+    width: 300px;
+    height: 300px;
+    background-color: tomato;
+    /* margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px; */
+    margin: 100px auto;
+    padding: 10px;
+    text-align: center;
+}
+
+/*
+background-image: url(images/bgs.jpg)
+1-background-size:100% 100% or cover
+*/
+.back{
+width: 700px;
+height: 800px;
+border: 3px solid red;
+/* background-color: blueviolet; */
+/* background-image: url(images/bgs.jpg);
+background-size: cover ; */
+/* background-image: url(images/images.jpg) , url(images/bath.png);
+background-repeat: repeat-x , no-repeat;
+background-position: 10px 10px , center center; */
+background-image: url(images/bgs.jpg);
+background-size: cover;
+background-position: center center;
+background-attachment: fixed;
+color: white;
+}
+
+
+/*Float*/
+
+.meals{
+        /* background-color: brown; */
+       
+        width: 90%;
+        margin: 100px auto;
+}
+.meal{
+        background-color: blue;
+        width: 25%;
+        /* height: 400px; */
+        /* display: inline-block; */
+        float: left;
+        text-align: center;
+        padding: 20px;
+        /* border: 1px solid red; */
+        /* margin: 5px; */
+        /* box-sizing: border-box; */
+}
+.inner-item{
+ /* background-color: blue; */
+}
+.meal img{
+        border-radius: 50%;
+}
+.meal p{
+        color: rgb(144, 142, 142);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.meal h3{
+      font-family: "Roboto", sans-serif;   
+      /* border-bottom: 2px solid black; */
+} 
+.clr{
+        clear: both;
+}
+.line{
+        width: 30%;
+        height: 3px;
+        background-color: rgb(144, 142, 142);
+        margin: auto;
+}
+
+.test{
+        width: 200px;
+        height: 200px;
+        background-color: aqua;
+        padding: 20px;
+}
+
+
+
+
+
+
+
+.def{
+        background-color: blue;
+}
+
+header{
+        height: 80vh;
+        background-color: blue;
+}
+
+
+/*position
+1-position: static   default
+2-position: absolute
+3- position: relative
+*/
+.pos{
+        width: 50%;
+        height: 150px;
+        background-color: blue;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        /* top: 0;
+        left: 20px; */
+        /* top: 30%;
+        right: 0; */
+        /* margin-top: 300px;
+        margin-left: 300px; */
+}
+.parent{
+        width: 400px;
+        height: 400px;
+        background-color: blueviolet;
+        /* position: absolute;
+       
+         right : 0;
+          top: 0; */
+          position: relative;
+}
+
+
+.fix{
+        width: 80px;
+        height: 80px;
+        background-color: tomato;
+        position: fixed;
+        right: 5px;
+        top: 30%;
+}
+.rela{
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        position: relative;
+        top: 10px;
+        left: 10px;
+        /* top: 10px;
+        left: 10px; */
+}
+
+.fixed-nav{
+        position: fixed;
+        top: 0;
+        background-color: aquamarine;
+        width: 100%;
+        padding: 20px;
+}
+
+.toggle{
+        background-color: yellowgreen;
+        padding: 10px;
+        position: sticky;
+        top: 0;
+}
+
+
+
+/*z-index*/
+.one{
+        width: 150px;
+        height: 150px;
+        background-color: blue;
+        position: absolute;
+        
+        top: 100px;
+        left: 100px;
+        z-index: 1;
+}
+.two{
+        width: 150px;
+        height: 150px;
+        background-color: rgb(0, 255, 47);
+        position: absolute;
+        
+        top: 120px;
+        left: 120px;
+        z-index: 2;
+
+}
+.three{
+        width: 150px;
+        height: 150px;
+        background-color: rgb(0, 238, 255);
+        position: absolute;
+        
+        top: 140px;
+        left: 140px;
+        z-index: 0;
+
+}
+
+
+
+
+
+
+
+/*RWD
+600 > xsm
+600 > sm >768
+768 > md >992
+992> lg >1200
+     xlg >1200
+*/
+/* @media screen and (max-width:750px) {
+        body{
+              background-color: blue;
+        }
+        .meal{
+         width: 100%;
+        }
+} */
+
+@media screen and (max-width:1200px) and (min-width:992px) {
+  .meal{
+         width: 25%;
+        }
+} 
+        
+
+@media screen and (max-width:991px) and (min-width:768px) {
+  .meal{
+         width: 50%;
+        }
+} 
+   @media screen and (max-width:767px) and (min-width:600px) {
+  .meal{
+         width: 100%;
+        }
+}
+  @media screen and (max-width:599px) {
+  .meal{
+         width: 100%;
+        }
+}
