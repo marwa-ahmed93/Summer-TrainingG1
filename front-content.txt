@@ -48,10 +48,12 @@ fonts =>vector
 spacing => margin&&pading
 
 background img   size reapate position attatchment-fixed
+
 floating
   
 
 --Box-sizing
+
 --media query   RWD
   600> xs
   600 >sm> 768

@@ -1,0 +1,294 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* :root{
+    --main-color:red;
+    --second-color:rgb(53, 180, 165);
+    --alternative:blue;
+    
+} */
+
+html{
+     --main-color:rgb(246, 255, 0);
+    --second-color:rgb(53, 180, 165);
+    --alternative:blue;
+}
+.aprent{
+    width: 90%;
+    margin: 50px auto;
+}
+.item{
+    width: calc(100% / 4);
+    height: 100px;
+    float: left;
+}
+.clr{
+    clear: both;
+}
+
+
+
+/*overflow
+1-hidden
+2-scroll
+3-auto
+4-visible  default
+*/
+.over{
+    width: 300px;
+    height: 300px;
+    border: 3px solid tomato;
+    overflow: auto;
+  
+}
+
+ul{
+    /* background-color: blue;
+    list-style-type: none;
+      overflow: auto;
+      position: fixed;
+      top: 0;
+      width: 100%; */
+}
+li{
+    /* background-color: tomato; */
+    /* padding: 20px;
+    width: 10%;
+    float: left; */
+}
+.parent{
+    background-color: var(--second-color,var(--alternative , yellow));
+    width: 300px;
+    height: 300px;
+    /* overflow: auto; */
+    padding-top: 20px;
+  
+}
+.chiled{
+    background-color: yellowgreen;
+    width: 100px;
+    height: 100px;
+    /* margin-top: 50px; */
+    /* padding-top: 10px; */
+}
+
+
+
+/*--
+hidden element
+ display:none
+  visibility: hidden;
+  opacity
+  rgba
+ */
+
+.hidden{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(100 ,200,20 , 0.6);
+   /* visibility: hidden; */
+    /* opacity: 0; */
+}
+
+/*rgb(0-255 ,0-255 ,0-255 )
+R    G    B
+rgba(0-255 ,0-255 ,0-255 ,0-1)
+R    G    B
+*/
+
+
+
+/*hover and 
+transition
+1-transition-property:background-color ;
+2-transition-duration:
+3-transition-delay
+*/
+
+
+.hov{
+    /* width: 150px;
+    height: 150px;
+    background-color: tomato !important ; */
+    /* transition-property:background-color width ;
+    transition-duration: 3s;
+    transition-delay: 1s; */
+    /* transition: all 2s 0.5s; */
+}
+
+
+/* .hov{
+       background-color: rgb(74, 71, 255) !important;
+ 
+} */
+
+
+
+
+/* .hov:hover {
+    background-color: blue;
+    width: 250px;
+} */
+
+html{
+    scroll-behavior: smooth;
+}
+#home{
+    height: 80vh;
+    background-color: yellow;
+}
+#about{
+    height: 80vh;
+    background-color: rgb(183, 0, 255);
+}
+#galary{
+    height: 80vh;
+    background-color: rgb(255, 0, 119);
+}
+#contact{
+    height: 80vh;
+    background-color: rgb(9, 255, 0);
+}
+/* nav ul li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+nav ul li a{
+    color: red;
+} */
+
+/* #navbar{
+
+} */
+
+
+/*
+ .hov > p{
+    color: white;
+    text-align: center;
+    /* padding: inherit; 
+}
+    */   
+  
+
+
+
+/* .hov + h2{
+color: tomato;
+} */
+
+
+/* .hov ~ h2{
+color: tomato;
+} */
+
+/*transform
+1-transform: rotate(45deg);
+2-translate(px , px)
+3-scale( , )
+4-skew(45deg)
+*/
+.hov{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    transition: all 2s;
+}
+.hov:hover{
+/* transform: rotateY(180deg); */
+/* transform: translateX(150px); */
+/* transform: scale(0.8 , 0.8)scale(0.8 , 0.8); */
+/* transform: skew(45deg); */
+transform: rotateY(180deg) skew(45deg) translateX(150px)  scale(0.8,0.8);
+}
+
+
+
+h3{
+    text-align: center;
+    position: relative;
+}
+h3::after{
+    content: "";
+    background-color: blue;
+    width: 40%;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+}
+
+h3::before{
+    content: "";
+    background-color: blue;
+    width: 40%;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+}
+h2{
+    border: 4px solid tomato;
+    width: 15%;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+h2::after{
+    content: "";
+    width: 40px;
+    height: 20px;
+    background-color: #fff;
+    position: absolute;
+    top: 90%;
+    left: 30px;
+}
+h2::before{
+    content: "";
+    width: 8px;
+    height: 35px;
+    background-color: tomato;
+    position: absolute;
+    top: 90%;
+    left: 40px;
+    z-index: 9999;
+}
+
+
+
+/*icon */
+i{
+    color: rgb(9, 255, 0);
+    font-size: 22px;
+}
+
+
+
+
+@media screen and (max-width:1200px) and (min-width:992px) {
+    .item{
+        width: 25%;
+    }
+}
+
+
+@media screen and (max-width:991px) and (min-width:768px) {
+    .item{
+        width: 50%;
+    }
+}
+
+
+@media screen and (max-width:767px) and (min-width:600px) {
+    .item{
+        width: 33.3%;
+    }
+}
+@media screen and (max-width:599px) {
+    .item{
+        width: 100%;
+    }
+}
