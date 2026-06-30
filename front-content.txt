@@ -62,3 +62,39 @@ floating
        xl>1200
 
 --position
+
+////////////////// session_3///////////////////////
+
+--overflow  =>visible  & hidden & scroll & auto
+--collapse margin
+
+--hidden element
+ display:none
+ visbilty: visible , hidden 
+ opacity:0 , 1
+ rgba()
+
+--hover
+--trnasition
+  porbirty
+  duration
+  delay
+  timer-function the art of web 
+--impotrant!
+--id
+--calc()
+--scroll smooth  scroll-behavior:smoth
+
+--transform
+    rotate(45deg)  , rotateX() , rotateY()
+    translate(0px , 12px)
+    scale(2,2)  , scaleX()  , scaleY()
+    skewX()  ,  skewY()
+
+--rem em   
+--css combinators(space,+,>,~)
+--inherit
+--after&before
+
+--font-awesome
+--varibles
