@@ -98,3 +98,16 @@ floating
 
 --font-awesome
 --varibles
+
+
+///////////////////////////// session_4 ///////////////////////////////////////////
+
+--animation (div-color,moved div , slider, taxi ,typing) 
+   animation-fill-mode
+--semantic Element
+--css nesting
+--box-shadow (box shadow gnerator) prefix(css-auto-prefix)
+--liner-gradient   => (ui gradiant)
+  radial-gradient 
+--flex-box
+https://flexboxfroggy.com/

@@ -1,0 +1,346 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.5.15,
+* Autoprefixer: v10.5.0
+* Browsers: last 4 version
+*/
+
+
+*{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+/* keyframes */
+
+.item{
+  width: 200px;  
+  height: 200px;  
+  background-color: blue;
+  -webkit-animation-name: kanba;
+          animation-name: kanba;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes kanba{
+
+    0%{background-color: blue;}
+    50%{background-color: blueviolet;}
+    100%{background-color: darkgoldenrod;}
+
+}
+
+@keyframes kanba{
+
+    0%{background-color: blue;}
+    50%{background-color: blueviolet;}
+    100%{background-color: darkgoldenrod;}
+
+}
+
+header{
+    background-image: url(../images/bgs.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center center ;
+    -webkit-animation-name: slider;
+            animation-name: slider;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+}
+@-webkit-keyframes slider{
+    0%{  background-image: url(../images/bgs.jpg); height: 0;}
+    25%{  background-image: url(../images/shutterstock_277750193.jpg);   height: 100vh;}
+    50%{  background-image: url(../images/portfolio-1.jpg); height: 0;}
+    75%{  background-image: url(../images/portfolio-3.jpg);   height: 100vh;}
+    100%{  background-image: url(../images/portfolio-4.jpg); height: 0;}
+}
+@keyframes slider{
+    0%{  background-image: url(../images/bgs.jpg); height: 0;}
+    25%{  background-image: url(../images/shutterstock_277750193.jpg);   height: 100vh;}
+    50%{  background-image: url(../images/portfolio-1.jpg); height: 0;}
+    75%{  background-image: url(../images/portfolio-3.jpg);   height: 100vh;}
+    100%{  background-image: url(../images/portfolio-4.jpg); height: 0;}
+}
+
+
+.taxi{
+    
+    position: relative;
+    /* left: 700px; */
+-webkit-animation-name: moveTaxi ;
+        animation-name: moveTaxi ;
+-webkit-animation-duration: 4s;
+        animation-duration: 4s;
+
+}
+@-webkit-keyframes moveTaxi{
+    0%{left: 0; top: 0;-webkit-transform: rotateY(180deg) ;transform: rotateY(180deg) ;}
+    50%{left: 700px; top: 0; -webkit-transform: rotateY(180deg) ; transform: rotateY(180deg) ;}
+    51%{left: 700px; top: 0; -webkit-transform: rotateY(360deg); transform: rotateY(360deg);}
+    100%{left: 0; top: 0;  -webkit-transform: rotateY(360deg);  transform: rotateY(360deg); }
+}
+@keyframes moveTaxi{
+    0%{left: 0; top: 0;-webkit-transform: rotateY(180deg) ;transform: rotateY(180deg) ;}
+    50%{left: 700px; top: 0; -webkit-transform: rotateY(180deg) ; transform: rotateY(180deg) ;}
+    51%{left: 700px; top: 0; -webkit-transform: rotateY(360deg); transform: rotateY(360deg);}
+    100%{left: 0; top: 0;  -webkit-transform: rotateY(360deg);  transform: rotateY(360deg); }
+}
+
+h1{
+    text-align: center;
+    position: relative;
+}
+
+h1::after{
+    content: "";
+    position: absolute;
+    -webkit-animation-name: typing ,color;
+            animation-name: typing ,color;
+    -webkit-animation-duration: 3s ;
+            animation-duration: 3s ;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+
+
+}
+@-webkit-keyframes typing{
+    0%{  content: "|"; }
+    2%{  content: " | D "; }
+    4%{  content: " | De "; }
+    6%{  content: " | Des "; }
+    8%{  content: " | Desi "; }
+    10%{  content: " | Desig "; }
+    12%{  content: " | Design "; }
+    14%{  content: " | Desig "; }
+    16%{  content: " | Desi"; }
+    18%{  content: " | Des  "; }
+    20%{  content: " | De "; }
+    22%{  content: " | D "; }
+    24%{  content: " "; }
+
+}
+@keyframes typing{
+    0%{  content: "|"; }
+    2%{  content: " | D "; }
+    4%{  content: " | De "; }
+    6%{  content: " | Des "; }
+    8%{  content: " | Desi "; }
+    10%{  content: " | Desig "; }
+    12%{  content: " | Design "; }
+    14%{  content: " | Desig "; }
+    16%{  content: " | Desi"; }
+    18%{  content: " | Des  "; }
+    20%{  content: " | De "; }
+    22%{  content: " | D "; }
+    24%{  content: " "; }
+
+}
+@-webkit-keyframes color{
+    0%{color: blueviolet;}
+    50%{color: rgb(64, 43, 226);}
+    100%{color: rgb(192, 226, 43);}
+}
+@keyframes color{
+    0%{color: blueviolet;}
+    50%{color: rgb(64, 43, 226);}
+    100%{color: rgb(192, 226, 43);}
+}
+
+
+#item{
+    &:hover{
+
+    }
+background-color: blue;
+height: 20px;
+
+img{
+
+}
+p{
+
+}
+h3{
+
+}
+
+}
+
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    margin: 100px auto;
+/* box-shadow: 16px 7px 9px 1px rgba(9, 2, 2, 0.21); */
+-webkit-box-shadow: -35px 29px 27px 5px rgba(0,0,0,0.75);
+        box-shadow: -35px 29px 27px 5px rgba(0,0,0,0.75);
+}
+h2{
+    /* text-align: center; */
+/* text-shadow: 10px 10px 10px rgb(18, 18, 21); */
+/* text-shadow: -7px 38px 3px rgba(0,0,0,0.6); */
+}
+
+
+
+/*linear-gradient*/
+
+.linier{
+    height: 100vh;
+    /* background-color: blue; */
+/* background-image:
+ linear-gradient(45deg, rgba(245, 11, 11 , 0.5) ,rgba(7, 130, 7,0.5),rgba(118, 7, 130, 0.5) )
+ , url(../images/bgs.jpg);
+
+background-size: cover;
+background-position: center center;
+animation-name: linear;
+animation-duration: 2s;
+animation-iteration-count: infinite; */
+
+background-image: radial-gradient(red,green,blue,yellow);
+
+}
+
+@keyframes linear{
+    0%{    background-image: linear-gradient(45deg, rgba(245, 11, 112, 0.226) ,rgba(103, 130, 7, 0.5),rgba(9, 7, 130, 0.403) ) , url(../images/portfolio-1.jpg);
+}
+    50%{    background-image: linear-gradient(45deg, rgba(245, 50, 11, 0.736) ,rgba(228, 63, 154, 0.5),rgba(9, 7, 130, 0.403) ) , url(../images/portfolio-3.jpg);
+}
+    100%{    background-image: linear-gradient(45deg, rgba(245, 11, 112, 0.226) ,rgba(149, 217, 227, 0.5),rgba(11, 130, 7, 0.722) ) , url(../images/portfolio-4.jpg);
+}
+}
+
+/*
+display:iniline-block
+float
+display: flex
+*/
+
+.meals{
+background-color: blue;
+display: flex;
+height: 150vh;
+/* flex-wrap: wrap; */
+/* flex-wrap: wrap-reverse; */
+/* flex-direction: column-reverse; */
+/* justify-content: space-evenly; */
+/* align-items: center;
+justify-content: center; */
+/* align-content:  center; */
+}
+.meal{
+    text-align: center;
+    background-color: tomato;
+    width: 25%;
+    height: 300px;
+    /* float: left; */
+}
+
+ul{
+    background-color: blue;
+    display: flex;
+    /* list-style-type: none; */
+    /* flex-wrap: wrap; */
+    /* flex-direction:column ; */
+    flex-flow:column wrap ;
+}
+li{
+   width: 50%;
+}
+
+
+/*
+flex-grow
+1+2+2 =5    500/5  100
+1*100    2*100   2*100
+
+*/
+
+
+.chiled{
+      display: flex;
+width: 500px;
+background-color: yellowgreen;
+}
+
+.one{
+    width: 200px;
+    height:100px ;
+    background-color: blue;
+    /* order: 2; */
+    /* flex-grow: 1; */
+    flex-shrink: 1;
+}
+.two{
+    width: 200px;
+    height:100px ;
+    background-color: rgb(255, 0, 64);
+      /* order: 3; */
+       /* flex-grow: 0; */
+       flex-shrink: 1;
+}
+
+.three{
+    width: 200px;
+    height:100px ;
+    background-color: rgb(108, 18, 55);
+      /* order: 0; */
+       /* flex-grow: 2; */
+       flex-shrink: 1;
+}
+
+.four{
+    width: 200px;
+    height:100px ;
+    background-color: rgb(31, 190, 14);
+      /* order: -1; */
+       /* flex-grow: 0; */
+       flex-shrink: 2;
+}
+
+.five{
+    width: 200px;
+    height:100px ;
+    background-color: rgb(190, 14, 143);
+     /* flex-grow: 2; */
+     flex-shrink: 3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ @media (max-width:800px){
+ul{
+    flex-direction: column;
+}
+li{
+    font-size: 26px;
+    text-align: center;
+    border-bottom: 4px solid grey;
+    color: white;
+}
+} 
