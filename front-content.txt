@@ -111,3 +111,16 @@ floating
   radial-gradient 
 --flex-box
 https://flexboxfroggy.com/
+
+
+//////////////////////////////session_5///////////////////
+--intro css grid
+--grid templete(columns,row)
+--grid template areas
+--ex-1 
+--ex-2
+--media query
+--justfiy(items,content)
+--align-items
+--css grid generator
+--implicit&explicit

@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+.parent{
+    /* background-color: aquamarine; */
+    height: 400px;
+    display: grid;
+    /* grid-template-columns: 1fr 2fr 1fr; */
+    /* grid-template-rows: 100px  */
+     grid-auto-rows: 100px;
+    /* grid-template-areas: 
+    "one two three"
+    "one two four"
+    "one . five"
+    ; */
+    gap: 10px;
+
+grid-template-areas:
+"one two two three"
+"one four five six"
+"one item-7 item-8 six"
+;
+/* justify-items: center;
+align-items: center; */
+/* justify-content: space-between; */
+}
+.item{
+    /* width: 50%; */
+    /* margin: auto; */
+}
+.item1{
+    background-color:green ;
+    grid-area: one;
+}
+.item2{
+    background-color: green ;
+    grid-area: two ;
+}
+.item3{
+    background-color: red;
+    grid-area: three;
+
+}
+.item4{
+    background-color:rgb(190, 230, 16);
+    grid-area: four;
+
+}
+.item5{
+    background-color:rgb(255, 0, 0) ;
+    grid-area: five;
+
+}
+.item6{
+    background-color: red;
+    grid-area: six;
+
+}
+.item7{
+    background-color:rgb(190, 230, 16);
+    grid-area: item-7;
+
+}
+.item8{
+    background-color:rgb(255, 0, 0) ;
+    grid-area: item-8;
+
+}
+
+
+@media (max-width:800px){
+
+.parent{
+grid-template-areas: 
+
+"one"
+"two"
+"three"
+"four"
+"five"
+"six"
+"item-7"
+"item-8"
+;
+}
+
+}
+
+
+
+
+
+
+
+.parent-2 {
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 8px;
+}
+    
+.div1 {
+    grid-column: span 3 / span 3;
+    background-color: blue;
+}
+
+.div2 {
+    grid-row: span 2 / span 2;
+    grid-row-start: 2;
+    background-color: blue;
+}
+
+.div4 {
+    grid-column: span 2 / span 2;
+    grid-row-start: 2;
+    background-color: blue;
+}
+
+.div6 {
+    grid-column-start: 2;
+    grid-row-start: 3;
+    background-color: blue;
+}
+
+.div7 {
+    grid-column-start: 3;
+    grid-row-start: 3;
+    background-color: blue;
+}
+
+.div9 {
+    grid-column: span 3 / span 3;
+    grid-row-start: 4;
+    background-color: blue;
+}
+        
