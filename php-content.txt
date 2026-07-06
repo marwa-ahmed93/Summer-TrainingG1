@@ -43,3 +43,75 @@
 --server& validate
 --files
 --request
+
+
+--BuiltInFunctions
+{
+
+
+/** array
+ * chunk()
+ * array_diff()
+ * array_comping()
+ * array_count_value()
+ * array_diff_assoc()
+ * array_fill
+ * array_key_exist()
+ * array_push()
+ * array_unshift()
+ * array_pop()
+ * array_shift()
+ * array_reverse()
+ * slice()
+ * array_unique()
+ * asort()
+ * ksort()
+ * slice()
+ * splice()
+ * slice()
+ * extract()
+ * shuffle()
+ * in_array()
+ * 
+ * * 
+ * string
+ * 
+ * chunk_split()
+ * echo()
+ * explode()
+ * implode()
+ * print_if()
+ * join()
+ * lefirst()
+ * ltrim()
+ * md5
+ * nl2br
+ * shal1()
+ * substr()
+ * math()
+ * ceil()
+ * floor()
+ * max()
+ * min()
+ * 
+ * 
+ */
+
+
+}
+
+--validates
+
+--TypeofErrors
+{/** types of error
+ * warning
+ * fatal error
+ * syntax error
+ * notice
+ * deprecated error
+ * 
+ */}
+
+--include&require
+
+--echo-print  single-doublequate
