@@ -115,3 +115,76 @@
 --include&require
 
 --echo-print  single-doublequate
+
+
+
+--files
+  { readfile('t.text')
+      r/w/a
+    $file= fopen('t.text','r')
+     echo fread($file,200)  fread($file,filesize('t.text'))
+      fclose($file)
+
+
+   $file= fopen('t.text','w')
+     echo fwrite($file,"welcome ahmed mohamed") 
+      fclose($file)
+
+ $file= fopen('t.text','a')
+     echo fwrite($file,"welcome ahmed mohamed") 
+      fclose($file)
+
+$file= fopen('t.text','r') resource
+     echo fgets($file) 
+      fclose($file)
+      
+while($line as fgets($file)){
+echo $line;
+}
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////
+
+database
+1-relational db
+no sql db
+
+ERD
+
+CREATE BATABASE NTI
+DEOP DATABASE NTI
+ CMD 
+   mysql -u root
+         CREATE BATABASE NTI;
+
+
+
+
+CREATE TABLE cutomers (
+    id INT AUTO_INCREMENT PRIMARY KEY ,
+    name varchar(100) NOT NULL ,
+    email varchar(50) UNIQUE ,
+    birdth_date DATE,
+    gender ENUM('male','femail') DEFAULT 'male' ,
+    INDEX id_name_email(name,email)
+    
+    
+    
+    );
+
+
+
+INSERT INTO users(name,email ,password , gender ,birth_date)
+VALUES ('malik','malik@gmail.com','1123','male','2022-7-13');
+
+
+
+
+
+INSERT INTO users(name,email ,password , gender ,birth_date)
+VALUES ('malik','malik@gmail.com','1123','male','2022-7-13'),
+('malik','malik@gmail.com','1123','male','2022-7-13'),
+('malik','malik@gmail.com','1123','male','2022-7-13'),
+('malik','malik@gmail.com','1123','male','2022-7-13')
